@@ -29,12 +29,28 @@
         if(verifica_campo('qtde_bilhetes')){
             $qtde = $_POST['qtde_bilhetes'];
         }
+
+        function emitir_passagem($array_data){
+            $arquivo = "passagem.txt";
+            $fp = fopen($arquivo,"w");
+
+            for($i = 0; $i < count($array_data);$i++){
+                fwrite($fp,$array_data[i]);
+            }
+
+            fclose($fp); 
+        }
         
 
 
         echo "<h2>$nome $sobrenome</h2>";
         echo "<h2>$bilhete</h2>";
         echo "<h2>$qtde</h2>";
+
+        $dados = array($nome, $bilhete, $qtde);
+
+        emitir_passagem($dados);
+
     ?>
     
 </body>

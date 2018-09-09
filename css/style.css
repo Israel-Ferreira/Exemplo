@@ -89,6 +89,8 @@ input[type="text"]{
 footer{
     background-color: #000;
     color: #FFF;
+    display: flex;
+    justify-content: center;
     height: 90px;
 }
 
@@ -97,8 +99,18 @@ footer{
         flex-direction: column;
     }
 
+    .btn{
+        width: 30%;
+    }
+
 
     .servico{
         width: 97%;
+    }
+
+    footer{
+        margin-top:1%;
+        flex-direction: column;
+        justify-content: center;
     }
 }
