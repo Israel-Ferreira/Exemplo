@@ -89,7 +89,7 @@ input[type="text"]{
 footer{
     background-color: #000;
     color: #FFF;
-    height: 40px;
+    height: 90px;
 }
 
 @media only screen and (max-width: 786px){
