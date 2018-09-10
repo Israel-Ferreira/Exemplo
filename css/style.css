@@ -110,6 +110,15 @@ footer{
 
 .social-icons{
     list-style: none;
+    display: inline-flex;
+}
+
+.social-icons >li {
+    margin: 8px;
+}
+
+.copyright{
+    margin: 8px;
 }
 
 
