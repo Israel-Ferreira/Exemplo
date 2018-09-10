@@ -9,9 +9,10 @@ const formIsEmpty = arrFields => {
 
 
 const formError = () => {
-    let errorMsg = document.getElementById("error-msg");
+    let msg = "Campos Vazios!!";
+    let errorMsg = document.getElementById("err-msg");
     errorMsg.style.display = "block";
-    errorMsg.value = msg;
+    errorMsg.textContent = msg;
 }
 
 
@@ -26,5 +27,8 @@ form.addEventListener('submit', event => {
 
     if(formIsEmpty(campos)){
         event.preventDefault();
+        formError();
     }
-})
+});
+
+

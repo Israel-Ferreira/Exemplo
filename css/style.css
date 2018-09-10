@@ -61,6 +61,14 @@ header{
     width: 70%;
 }
 
+#err-msg{
+    display: none;
+    border: 1px solid red;
+    background-color: pink;
+    color: red;
+    height: 20px;
+}
+
 .form-buy{
     margin: 1% auto;
     text-align: center;
@@ -98,6 +106,10 @@ footer{
     display: flex;
     justify-content: center;
     height: 90px;
+}
+
+.social-icons{
+    list-style: none;
 }
 
 
