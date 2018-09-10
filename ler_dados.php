@@ -30,10 +30,20 @@
             $qtde = $_POST['qtde_bilhetes'];
         }
 
+        function emitir_passagem($dados_compra){
+            $fp = fopen("passagem.txt","w");
+            for($i = 0; $i < count($dados_compra); $i++){
+                $content = "$dados_compra[$i] \n";
+                fwrite($fp,$content);
+            }
+        }
+
         
         echo "<h2>$nome $sobrenome</h2>";
         echo "<h2>$bilhete</h2>";
         echo "<h2>$qtde</h2>";
+
+        
 
         $dados = array($nome, $bilhete, $qtde);
     ?>
