@@ -55,6 +55,8 @@
             fclose($fp);
         }
 
+        
+
 
         $data = date("d/m/Y H:i:s");
         $preco =  get_valor($tipo_bilhete,$qtde);
@@ -65,9 +67,9 @@
         emitir_passagem($dados);
 
 
-        echo "<h2>$nome $sobrenome</h2>";
-        echo "<h2>$tipo_bilhete</h2>";
-        echo "<h2>$qtde</h2>";
+        foreach ($dados as $dado) {
+            echo "<h2>$dado</h2>"
+        }
         
     ?>
     

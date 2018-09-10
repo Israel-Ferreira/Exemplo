@@ -79,12 +79,16 @@ input,select{
     border: 1px solid #ccc;
     border-radius: 5px;
     height: 35px;
-    margin: 1%;
+    margin-top: 1%;
 }
 
 input[type="text"]{
     width: 30%;
 }
+ input[type="checkbox"]{
+    height: 15px;
+    margin: 1%;
+ }
 
 .btn{
     border-radius: 5px;
