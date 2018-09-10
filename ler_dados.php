@@ -24,11 +24,25 @@
         }
 
         if(verifica_campo('ticket')){
-            $bilhete = $_POST['ticket'];
+            $tipo_bilhete = $_POST['ticket'];
         }
 
         if(verifica_campo('qtde_bilhetes')){
             $qtde = $_POST['qtde_bilhetes'];
+        }
+
+        function get_volume($preco,$qtde){
+            return $preco * $qtde;
+        }
+
+        function get_valor($passeio, $qtde){
+            if($passeio === "Passeio Normal"){
+                return get_volume(250,$qtde);
+            }else if($passeio === "Passeio Panorâmico"){
+                return get_volume(350,$qtde);
+            }else{
+                return get_volume(500,$qtde);
+            }
         }
 
         function emitir_passagem($dados_compra){
@@ -41,16 +55,20 @@
             fclose($fp);
         }
 
-        
-        echo "<h2>$nome $sobrenome</h2>";
-        echo "<h2>$bilhete</h2>";
-        echo "<h2>$qtde</h2>";
 
         $data = date("d/m/Y H:i:s");
+        $preco =  get_valor($tipo_bilhete,$qtde);
 
         $data_msg = "Data da compra: $data";
 
-        $dados = array($nome, $bilhete, $qtde,$data);
+        $dados = array($nome, $tipo_bilhete,$qtde,$preco,$data);
+        emitir_passagem($dados);
+
+
+        echo "<h2>$nome $sobrenome</h2>";
+        echo "<h2>$tipo_bilhete</h2>";
+        echo "<h2>$qtde</h2>";
+        
     ?>
     
 </body>
