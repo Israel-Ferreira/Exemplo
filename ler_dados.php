@@ -35,7 +35,8 @@
             $fp = fopen($arquivo,"w");
 
             for($i = 0; $i < count($array_data);$i++){
-                fwrite($fp,$array_data[$i]);
+                $content = $array_data;
+                fwrite($fp,$content);
             }
 
             fclose($fp); 

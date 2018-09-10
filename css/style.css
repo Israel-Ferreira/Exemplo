@@ -61,6 +61,11 @@ header{
     width: 70%;
 }
 
+.form-buy{
+    border: 1px solid black;
+    margin: 1% auto;
+    text-align: center;
+}
 
 input,select{
     border: 1px solid #ccc;
@@ -83,6 +88,7 @@ input[type="text"]{
 .btn-submit{
     background-color: #5b90e5;
     color: #FFF;
+    cursor: pointer;
 }
 
 
@@ -106,6 +112,12 @@ footer{
 
     .servico{
         width: 97%;
+    }
+
+    .form-div{
+        width: 97%;
+        margin: 1%;
+        padding: 1%;
     }
 
     footer{

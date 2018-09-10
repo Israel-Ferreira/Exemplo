@@ -34,22 +34,28 @@
     </div>
     <div class="form-div">
         <h2 class="form-title">Compre suas passagens</h2>
-        <form action="/ler_dados.php" method="POST" id="form">
-            <div class="input-name">
-                <label for="first-name">Nome: <input type="text" name="first-name" id="first-name"></label>
-                <label for="last-name">Sobrenome: <input type="text" name="last-name" id="last-name"></label>
-            </div>
-            <div class="select-tickets">
-                <label for="ticket">Tipo de Bilhete: </label>
-                <select name="ticket" id="ticket">
-                    <option value="Passeio Normal">Passeio Normal</option>
-                    <option value="Passeio Panorâmico">Passeio Panorâmico</option>
-                    <option value="Expresso da Meia Noite">Expresso da Meia Noite</option>
-                </select>
-            </div>
-            <p class="input-label">Qtde. de Bilhetes: <input type="number" placeholder="Qtde. de Bilhetes" name="qtde_bilhetes"></p>
-            <button type="submit" class="btn btn-submit">Comprar</button>
-        </form>
+        <div class="error-div">
+            <h4 id="err-msg"></h4>
+        </div>
+        <div class="form-buy">
+            <form action="/ler_dados.php" method="POST" id="form">
+                <div class="input-name">
+                    <p>Nome: <input type="text" name="first-name" id="first-name"></p>
+                    <p>Sobrenome: <input type="text" name="last-name" id="last-name"></p>
+                </div>
+                <div class="select-tickets">
+                    <label for="ticket">Tipo de Bilhete: </label>
+                    <select name="ticket" id="ticket">
+                        <option value="Passeio Normal">Passeio Normal</option>
+                        <option value="Passeio Panorâmico">Passeio Panorâmico</option>
+                        <option value="Expresso da Meia Noite">Expresso da Meia Noite</option>
+                    </select>
+                </div>
+                <p class="input-label">Qtde. de Bilhetes: <input type="number" id="amount" placeholder="Qtde. de Bilhetes"
+                        name="qtde_bilhetes"></p>
+                <button type="submit" class="btn btn-submit">Comprar</button>
+            </form>
+        </div>
     </div>
 </body>
 <footer>
@@ -60,9 +66,10 @@
             <li><i class="fab fa-instagram"></i> Instagram</li>
         </ul>
     </div>
-    <div class="copyright">    
+    <div class="copyright">
         <p>&copy; 2018, Northwest Express</p>
     </div>
+    <script src="./js/main.js"></script>
 </footer>
 
 </html>
