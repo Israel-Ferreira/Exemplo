@@ -12,6 +12,7 @@
         <h1>Expresso </h1>
     </header>
     <?php
+        date_default_timezone_set("America/Sao_Paulo");
         function verifica_campo($campo){
             return isset($_POST[$campo]) ? true : false;
         }
@@ -36,6 +37,8 @@
                 $content = "$dados_compra[$i] \n";
                 fwrite($fp,$content);
             }
+
+            fclose($fp);
         }
 
         
@@ -43,9 +46,11 @@
         echo "<h2>$bilhete</h2>";
         echo "<h2>$qtde</h2>";
 
-        
+        $data = date("d/m/Y H:i:s");
 
-        $dados = array($nome, $bilhete, $qtde);
+        $data_msg = "Data da compra: $data";
+
+        $dados = array($nome, $bilhete, $qtde,$data);
     ?>
     
 </body>
