@@ -62,9 +62,9 @@ header{
 }
 
 .form-buy{
-    border: 1px solid black;
     margin: 1% auto;
     text-align: center;
+    padding: 1%;
 }
 
 input,select{
@@ -99,6 +99,8 @@ footer{
     justify-content: center;
     height: 90px;
 }
+
+
 
 @media only screen and (max-width: 786px){
     .servicos{

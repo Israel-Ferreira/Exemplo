@@ -9,7 +9,9 @@ const formIsEmpty = arrFields => {
 
 
 const formError = () => {
-    let msg = "Formulário Incompleto "
+    let errorMsg = document.getElementById("error-msg");
+    errorMsg.style.display = "block";
+    errorMsg.value = msg;
 }
 
 
