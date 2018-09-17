@@ -68,7 +68,7 @@
 
 
         foreach ($dados as $dado) {
-            echo "<h2>$dado</h2>"
+            echo "<h2>$dado</h2>";
         }
         
     ?>
