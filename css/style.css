@@ -28,6 +28,15 @@ header{
     background-image: url("../images/Passeio-Maria-Fumaca.jpg");
     background-position: center;
     border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.text-image{
+    color: #FFF;
+    text-align: center;
+    padding: 50px;
 }
 
 

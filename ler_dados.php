@@ -56,8 +56,6 @@
         }
 
         
-
-
         $data = date("d/m/Y H:i:s");
         $preco =  get_valor($tipo_bilhete,$qtde);
 
