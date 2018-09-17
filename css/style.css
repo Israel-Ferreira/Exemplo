@@ -25,6 +25,8 @@ header{
 .banner{
     height: 400px;
     width: 100%;
+    background-image: url("../images/Passeio-Maria-Fumaca.jpg");
+    background-position: center;
     border: 1px solid black;
 }
 
@@ -48,12 +50,21 @@ header{
 .servico{
     border: 1px solid black;
     width: 25%;
-    height: 80px;
-    margin: 1%;
+    height: 390px;
+    text-align: center;
+    margin: 0.5%;
+    box-shadow: 2px 5px #ccc;
 }
 
 .servico-title{
     font-size: 16px;
+}
+
+.servico-image{
+    width: 88.5%;
+    height: 200px;
+    margin: 1% auto;
+    display: block;
 }
 
 .form-div{
@@ -96,17 +107,23 @@ input[type="radio"]{
 }
 
 .btn{
-    margin-top: 1%;
+    margin-top: 2%;
     border-radius: 5px;
     border: none;
     height: 40px;
     width: 10%;
+    cursor: pointer;
+}
+
+
+.btn-price{
+    background-color: #5b90e5;
+    color: #FFF;
 }
 
 .btn-submit{
-    background-color: #5b90e5;
+    background-color: rgb(77, 204, 77);
     color: #FFF;
-    cursor: pointer;
 }
 
 
@@ -146,6 +163,11 @@ footer{
 
     .servico{
         width: 97%;
+        height: 400px;
+    }
+    
+    .servico-image{
+        height: 80%;
     }
 
     .form-div{

@@ -13,21 +13,24 @@
 
 <body>
     <header>
-        <h1>Expresso </h1>
+        <h1>Northwest Express</h1>
     </header>
     <div class="banner">
-        <img src="" alt="imagem do banner" class="banner-image">
+        <!-- <img src="./images/Passeio-Maria-Fumaca.jpg" alt="imagem do banner" class="banner-image"> -->
     </div>
     <div class="servicos">
         <h2 class="servicos-title">Serviços</h2>
         <div class="servicos-flex">
             <div class="servico">
+                <img class="servico-image" src="images/capa-trem.jpg" alt="Trem Normal">
                 <h2 class="servico-title">Passeio Normal</h2>
             </div>
             <div class="servico">
+                <img class="servico-image" src="images/trem-noite.jpg" alt="Expresso da Meia Noite">
                 <h2 class="servico-title">Expresso da meia noite</h2>
             </div>
             <div class="servico">
+                <img class="servico-image" src="images/trem surf.jpg" alt="Trem Panorâmico">
                 <h2 class="servico-title">Passeio Panorâmico</h2>
             </div>
         </div>
@@ -51,7 +54,7 @@
                     </select>
                 </div>
                 <div class="radio-group">
-                    <p>Escolha um seguro: </p>
+                    <h3 class="radio-title">Escolha um seguro: </p>
                     <input type="radio" name="seguro" id="sem-seguro" checked>
                     <label for="sem-seguro"> Sem seguro</label>
                     <input type="radio" name="seguro" id="seguro-basico">
@@ -60,8 +63,7 @@
                     <label for="seguro-luxo"> Seguro Luxo</label>
                 </div>
                 <p class="input-label">Qtde. de Bilhetes: <input type="number" id="amount" value="1" min="1" max="15" name="qtde_bilhetes"></p>
-                
-
+                <button id="show-price" class="btn btn-price">Ver Preço Final</button>
                 <button type="submit" class="btn btn-submit">Comprar</button>
             </form>
         </div>
