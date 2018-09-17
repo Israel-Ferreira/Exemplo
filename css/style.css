@@ -86,9 +86,13 @@ input[type="text"]{
     width: 30%;
 }
 
-input[type="checkbox"]{
-    height: 15px;
+.radio-group > p{
     margin: 1%;
+}
+
+input[type="radio"]{
+    height: 15px;
+    margin: 0.75%;
 }
 
 .btn{

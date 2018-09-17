@@ -50,16 +50,18 @@
                         <option value="Expresso da Meia Noite">Expresso da Meia Noite</option>
                     </select>
                 </div>
-                <div class="check-group">
-                    <input type="checkbox" name="seguro" id="sem-seguro" checked>
+                <div class="radio-group">
+                    <p>Escolha um seguro: </p>
+                    <input type="radio" name="seguro" id="sem-seguro" checked>
                     <label for="sem-seguro"> Sem seguro</label>
-                    <input type="checkbox" name="seguro" id="seguro-basico">
+                    <input type="radio" name="seguro" id="seguro-basico">
                     <label for="seguro-basico">Seguro básico</label>
-                    <input type="checkbox" name="seguro" id="seguro-luxo">
+                    <input type="radio" name="seguro" id="seguro-luxo">
                     <label for="seguro-luxo"> Seguro Luxo</label>
                 </div>
-                <p class="input-label">Qtde. de Bilhetes: <input type="number" id="amount" placeholder="Qtde. de Bilhetes" min="1" max="15" name="qtde_bilhetes"></p>
-                <h3 class="valor">R$ <span id="price">0,00</span></h3>
+                <p class="input-label">Qtde. de Bilhetes: <input type="number" id="amount" value="1" min="1" max="15" name="qtde_bilhetes"></p>
+                
+
                 <button type="submit" class="btn btn-submit">Comprar</button>
             </form>
         </div>
