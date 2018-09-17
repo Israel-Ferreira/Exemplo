@@ -44,21 +44,22 @@
                 <div class="select-tickets">
                     <label for="ticket">Tipo de Bilhete: </label>
                     <select name="ticket" id="ticket">
+                        <option value="">Selecione um Passeio</option>
                         <option value="Passeio Normal">Passeio Normal</option>
                         <option value="Passeio Panorâmico">Passeio Panorâmico</option>
                         <option value="Expresso da Meia Noite">Expresso da Meia Noite</option>
                     </select>
                 </div>
                 <div class="check-group">
-                    <input type="checkbox" name="seguro" id="sem-seguro">
+                    <input type="checkbox" name="seguro" id="sem-seguro" checked>
                     <label for="sem-seguro"> Sem seguro</label>
                     <input type="checkbox" name="seguro" id="seguro-basico">
                     <label for="seguro-basico">Seguro básico</label>
                     <input type="checkbox" name="seguro" id="seguro-luxo">
                     <label for="seguro-luxo"> Seguro Luxo</label>
-
                 </div>
                 <p class="input-label">Qtde. de Bilhetes: <input type="number" id="amount" placeholder="Qtde. de Bilhetes" min="1" max="15" name="qtde_bilhetes"></p>
+                <h3 class="valor">R$ <span id="price">0,00</span></h3>
                 <button type="submit" class="btn btn-submit">Comprar</button>
             </form>
         </div>
