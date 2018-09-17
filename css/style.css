@@ -91,6 +91,7 @@ input[type="text"]{
  }
 
 .btn{
+    margin-top: 1%;
     border-radius: 5px;
     border: none;
     height: 40px;
@@ -109,6 +110,7 @@ footer{
     color: #FFF;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 90px;
 }
 
