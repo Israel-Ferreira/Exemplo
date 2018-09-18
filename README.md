@@ -10,9 +10,12 @@
 
 Clone este repositório na sua máquina, com este comando no seu terminal:
 
-``` git clone https://github.com/Israel-Ferreira/Exemplo.git ```
+    git clone https://github.com/Israel-Ferreira/Exemplo.git 
 
 Depois mude para a pasta onde  está o projeto;
+
+    cd Exemplo
+
 
 
 
