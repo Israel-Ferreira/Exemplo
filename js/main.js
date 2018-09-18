@@ -1,11 +1,16 @@
 let form = document.getElementById("form");
 
+
 const accessElemById = elId => document.getElementById(elId).value;
 
 const formIsEmpty = arrF => arrF.some(field => field === "");
 
 const accessInputs = arr => arr.map(id => accessElemById(id));
 
+const camposVal = () => {
+    let ids = ["first-name","last-name","ticket","amount"];
+    return accessInputs(ids);
+}
 
 const formError = () => {
     let errorMsg = document.getElementById("err-msg");
@@ -27,7 +32,7 @@ const priceTrip =  opt => {
 
 
 form.addEventListener('submit', event => {
-    let ids = ["first-name","last-name","ticket","amount"];
+    let ids = ["first-name","last-name","ticket","date-picker","amount"];
 
     let campos = accessInputs(ids);
 
@@ -36,7 +41,6 @@ form.addEventListener('submit', event => {
         formError();
     }
 });
-
 
 
 

@@ -54,8 +54,15 @@
                         <option value="Expresso da Meia Noite">Expresso da Meia Noite</option>
                     </select>
                 </div>
+                <div class="time-sel">
+                    <label for="date-picker">Data de Partida: </label>
+                    <input type="date" name="data-de-partida" id="date-picker">
+                </div>
+                <div class="qtde-amount">
+                    <p class="input-label">Qtde. de Bilhetes: <input type="number" id="amount" value="1" min="1" max="15" name="qtde_bilhetes"></p>
+                </div>
                 <div class="radio-group">
-                    <h3 class="radio-title">Escolha um seguro: </p>
+                    <h3 class="radio-title">Escolha um seguro</p>
                     <input type="radio" name="seguro" id="sem-seguro" checked>
                     <label for="sem-seguro"> Sem seguro</label>
                     <input type="radio" name="seguro" id="seguro-basico">
@@ -63,7 +70,6 @@
                     <input type="radio" name="seguro" id="seguro-luxo">
                     <label for="seguro-luxo"> Seguro Luxo</label>
                 </div>
-                <p class="input-label">Qtde. de Bilhetes: <input type="number" id="amount" value="1" min="1" max="15" name="qtde_bilhetes"></p>
                 <button id="show-price" class="btn btn-price">Ver Preço Final</button>
                 <button type="submit" class="btn btn-submit">Comprar</button>
             </form>

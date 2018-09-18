@@ -17,7 +17,6 @@
             return isset($_POST[$campo]) ? true : false;
         }
 
-
         if(verifica_campo('first-name') && verifica_campo('last-name')){
             $nome =  $_POST['first-name'];
             $sobrenome = $_POST['last-name'];
@@ -29,6 +28,10 @@
 
         if(verifica_campo('qtde_bilhetes')){
             $qtde = $_POST['qtde_bilhetes'];
+        }
+
+        if(verifica_campo('data-de-partida')){
+            $data_partida = $_POST['data-de-partida'];
         }
 
         function get_volume($preco,$qtde){
@@ -61,7 +64,7 @@
 
         $data_msg = "Data da compra: $data";
 
-        $dados = array($nome, $tipo_bilhete,$qtde,$preco,$data);
+        $dados = array($nome, $tipo_bilhete,$qtde,$preco,$data_partida,$data);
         emitir_passagem($dados);
 
 
