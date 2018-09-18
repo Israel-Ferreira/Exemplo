@@ -34,6 +34,10 @@
             $data_partida = $_POST['data-de-partida'];
         }
 
+        if(verifica_campo('seguro')){
+            $seguro = $_POST['seguro'];
+        }
+
         function get_volume($preco,$qtde){
             return $preco * $qtde;
         }
@@ -63,8 +67,9 @@
         $preco =  get_valor($tipo_bilhete,$qtde);
 
         $data_msg = "Data da compra: $data";
+        $data_prt = "Data de Partida: $data_partida";
 
-        $dados = array($nome, $tipo_bilhete,$qtde,$preco,$data_partida,$data);
+        $dados = array($nome, $tipo_bilhete,$qtde,$preco,$data_msg,$data_prt);
         emitir_passagem($dados);
 
 
