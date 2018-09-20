@@ -1,11 +1,12 @@
 let form = document.getElementById("form");
 
-
 const accessElemById = elId => document.getElementById(elId).value;
 
 const formIsEmpty = arrF => arrF.some(field => field === "");
 
 const accessInputs = arr => arr.map(id => accessElemById(id));
+
+const btnPreco  = document.getElementById("btn-price");
 
 const camposVal = () => {
     let ids = ["first-name","last-name","ticket","amount"];
@@ -41,6 +42,7 @@ form.addEventListener('submit', event => {
         formError();
     }
 });
+
 
 
 
