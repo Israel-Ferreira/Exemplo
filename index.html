@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Northwest - Passeio Turistico</title>
 </head>
@@ -57,7 +58,8 @@
                     <input type="date" name="data-de-partida" id="date-picker">
                 </div>
                 <div class="qtde-amount">
-                    <p class="input-label">Qtde. de Bilhetes: <input type="number" id="amount" value="1" min="1" max="15" name="qtde_bilhetes"></p>
+                    <p class="input-label">Qtde. de Bilhetes: <input type="number" id="amount" value="1" min="1" max="15"
+                            name="qtde_bilhetes"></p>
                 </div>
                 <div class="radio-group">
                     <h3 class="radio-title">Escolha o seu vagão</h3>
@@ -70,12 +72,22 @@
                 </div>
                 <div class="check-group">
                     <h3 class="radio-title">Opcionais</h3>
-                    <label for="doce-de-leite"><input type="checkbox"  value="doce de leite" name="optional[]" id="doce-de-leite" checked>Doce de Leite</label>
+                    <label for="doce-de-leite"><input type="checkbox" value="doce de leite" name="optional[]" id="doce-de-leite" checked>Doce de Leite</label>
                     <label for="cachaca"><input type="checkbox" value="cachaca" name="optional[]" id="cachaca">Cachaça</label>
                     <label for="queijo"><input type="checkbox" value="queijo" name="optional[]" id="queijo">Queijo</label>
                 </div>
+                <div class="txt-area">
+                    <div class="radio-group">
+                        <h3 class="radio-title">Deseja adicionar algum comentario</h3>
+                        <input type="radio" name="vagao" value="Não" id="feedbak-neg" checked>
+                        <label for="sem-seguro">Não</label>
+                        <input type="radio" name="vagao" value="Sim" id="feedbak-pos">
+                        <label for=""></label>
+                    </div>
+                </div>
                 <button id="show-price" class="btn btn-price">Ver Preço Final</button>
                 <button type="submit" class="btn btn-submit">Comprar</button>
+
             </form>
         </div>
     </div>
