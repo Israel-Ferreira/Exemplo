@@ -45,5 +45,17 @@ form.addEventListener('submit', event => {
 
 
 
+form.addEventListener('change',event => {
+    let rb1 = document.getElementById('feedback-neg');
+    let rb2 = document.getElementById('feedback-pos');
+    console.log(rb1.value)
+    console.log(rb2.value)
+
+    if(rb2.checked){
+        document.getElementById('txtArea').disabled = false;
+    }else if(rb1.checked){
+        document.getElementById('txtArea').disabled = true;
+    }
+})
 
 

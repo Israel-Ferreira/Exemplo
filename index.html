@@ -28,7 +28,7 @@
                     <li>Serviço de bordo com 1 água ou 1 refrigerante</li>
                     <li>Kit lanche</li>
                 </ul>
-                <button id="show-price" class="btn btn-det">Mais detalhes</button>
+                <button id="show-price" class="btn btn-detail">Mais detalhes</button>
             </div>
             <div class="servico">
                 <img class="servico-image" src="images/trem-noite.jpg" alt="Expresso da Meia Noite">
@@ -38,7 +38,7 @@
                     <li>Kit lanche</li>
                     <li>Jantar</li>
                 </ul>
-                <button id="show-price" class="btn btn-price">Mais detalhes</button>
+                <button id="show-price" class="btn btn-detail">Mais detalhes</button>
             </div>
             <div class="servico">
                 <img class="servico-image" src="images/trem surf.jpg" alt="Trem Panorâmico">
@@ -48,7 +48,7 @@
                     <li>Kit lanche</li>
                     <li>Almoço</li>
                 </ul>
-                <button id="show-price" class="btn btn-price">Mais detalhes</button>
+                <button id="show-price" class="btn btn-detail">Mais detalhes</button>
             </div>
         </div>
     </div>
@@ -75,7 +75,8 @@
                     <input type="date" name="data-de-partida" id="date-picker">
                 </div>
                 <div class="qtde-amount">
-                    <p class="input-label">Qtde. de Bilhetes: <input type="number" id="amount" value="1" min="1" max="15" name="qtde_bilhetes"></p>
+                    <p class="input-label">Qtde. de Bilhetes: <input type="number" id="amount" value="1" min="1" max="15"
+                            name="qtde_bilhetes"></p>
                 </div>
                 <div class="radio-group">
                     <h3 class="radio-title">Escolha o seu vagão</h3>
@@ -88,17 +89,23 @@
                 </div>
                 <div class="check-group">
                     <h3 class="radio-title">Opcionais</h3>
-                    <label for="doce-de-leite"><input type="checkbox" value="doce de leite" name="optional[]" id="doce-de-leite" checked>Doce de Leite</label>
+                    <label for="doce-de-leite"><input type="checkbox" value="doce de leite" name="optional[]" id="doce-de-leite"
+                            checked>Doce de Leite</label>
                     <label for="cachaca"><input type="checkbox" value="cachaca" name="optional[]" id="cachaca">Cachaça</label>
                     <label for="queijo"><input type="checkbox" value="queijo" name="optional[]" id="queijo">Queijo</label>
                 </div>
                 <div class="txt-area">
                     <div class="radio-group">
                         <h3 class="radio-title">Deseja adicionar algum comentario</h3>
-                        <input type="radio" name="vagao" value="Não" id="feedbak-neg" checked>
+                        <input type="radio" value="Não" name="valor-txt" id="feedback-neg" checked>
                         <label for="sem-seguro">Não</label>
-                        <input type="radio" name="vagao" value="Sim" id="feedbak-pos">
+                        <input type="radio" value="Sim"  name="valor-txt" id="feedback-pos">
                         <label for="radio">Sim</label>
+                        <div class="txt-area">
+                            <textarea name="" id="txtArea" cols="30" rows="10" disabled>
+                                Escreva aqui seu comentario
+                            </textarea>
+                        </div>
                     </div>
                 </div>
                 <button id="show-price" class="btn btn-price">Ver Preço Final</button>

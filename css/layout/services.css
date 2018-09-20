@@ -38,3 +38,8 @@
 .service-include{
     list-style: none;
 }
+
+.btn-detail{
+    background-color: dodgerblue;
+    color: #FFF;
+}
