@@ -34,3 +34,7 @@
     margin: 1% auto;
     display: block;
 }
+
+.service-include{
+    list-style: none;
+}
