@@ -1,0 +1,21 @@
+footer{
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+.social-icons{
+    list-style: none;
+    display: inline-flex;
+}
+
+.social-icons >li {
+    margin: 8px;
+}
+
+.copyright{
+    margin: 8px;
+}

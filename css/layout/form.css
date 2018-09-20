@@ -1,0 +1,71 @@
+.form-div{
+    margin: 1% auto;
+    width: 70%;
+}
+
+#err-msg{
+    display: none;
+    border: 1px solid red;
+    background-color: pink;
+    color: red;
+    height: 20px;
+}
+
+
+.form-buy{
+    margin: 1% auto;
+    text-align: center;
+    padding: 1%;
+}
+
+input,select{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 1%;
+}
+
+input[type="text"]{
+    width: 30%;
+}
+
+.radio-group > h3, .check-group > h3{
+    margin: 1%;
+}
+
+.check-group{
+    text-align: center;
+    padding: 0;
+}
+
+input[type="radio"]{
+    height: 15px;
+    margin: 0.75%;
+}
+
+
+input[type="checkbox"]{
+    height: 15px;
+    margin: 0.75%;
+    text-align: center;
+}
+
+.btn{
+    margin-top: 2%;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 15%;
+    cursor: pointer;
+}
+
+
+.btn-price{
+    background-color: #5b90e5;
+    color: #FFF;
+}
+
+.btn-submit{
+    background-color: rgb(77, 204, 77);
+    color: #FFF;
+}

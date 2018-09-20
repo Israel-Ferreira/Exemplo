@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+.banner{
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/Passeio-Maria-Fumaca.jpg");
+    background-position: center;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.text-image{
+    color: #FFF;
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+.btn{
+    margin-top: 2%;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 15%;
+    cursor: pointer;
+}

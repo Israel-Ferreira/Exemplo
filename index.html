@@ -62,13 +62,19 @@
                     <p class="input-label">Qtde. de Bilhetes: <input type="number" id="amount" value="1" min="1" max="15" name="qtde_bilhetes"></p>
                 </div>
                 <div class="radio-group">
-                    <h3 class="radio-title">Escolha um seguro</p>
-                    <input type="radio" name="seguro" id="sem-seguro" checked>
-                    <label for="sem-seguro"> Sem seguro</label>
-                    <input type="radio" name="seguro" id="seguro-basico">
-                    <label for="seguro-basico">Seguro básico</label>
-                    <input type="radio" name="seguro" id="seguro-luxo">
-                    <label for="seguro-luxo"> Seguro Luxo</label>
+                    <h3 class="radio-title">Escolha o seu vagão</h3>
+                    <input type="radio" name="vagao" value="Vagao Economico" id="sem-seguro" checked>
+                    <label for="sem-seguro">Vagão Econômico</label>
+                    <input type="radio" name="vagao" value="Vagao Executivo" id="seguro-basico">
+                    <label for="seguro-basico">Vagão Executivo</label>
+                    <input type="radio" name="vagao" value="Vagao de Luxo" id="seguro-luxo">
+                    <label for="seguro-luxo"> Vagão de Luxo</label>
+                </div>
+                <div class="check-group">
+                    <h3 class="radio-title">Opcionais</h3>
+                    <label for="doce-de-leite"><input type="checkbox"  value="doce de leite" name="optional[]" id="doce-de-leite" checked>Doce de Leite</label>
+                    <label for="cachaca"><input type="checkbox" value="cachaca" name="optional[]" id="cachaca">Cachaça</label>
+                    <label for="queijo"><input type="checkbox" value="queijo" name="optional[]" id="queijo">Queijo</label>
                 </div>
                 <button id="show-price" class="btn btn-price">Ver Preço Final</button>
                 <button type="submit" class="btn btn-submit">Comprar</button>

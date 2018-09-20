@@ -1,0 +1,36 @@
+.servicos-title{
+    margin: 8px;
+}
+.servicos-title,.servico-title,.form-title{
+    text-align: center;
+}
+
+
+.servicos-flex{
+    display: flex;
+    margin: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.servico{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 25%;
+    height: 390px;
+    text-align: center;
+    margin: 0.5%;
+    box-shadow: 2px 5px #ccc;
+}
+
+.servico-title{
+    font-size: 16px;
+}
+
+.servico-image{
+    width: 88.5%;
+    height: 200px;
+    margin: 1% auto;
+    display: block;
+}
