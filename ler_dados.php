@@ -27,7 +27,7 @@
         function precoOpcional($arrOpt){
             $precoOp = 0;
             
-            if(gettype($arrOpt) === null){
+            if(gettype($arrOpt) === null ){
                 return 0;
             }else{    
                 foreach($arrOpt as $opt){
@@ -85,30 +85,28 @@
         $opcionais = valorCampo('optional');
         $valor_opcional = precoOpcional($opcionais);
 
-        echo "<h2>$opcionais</h2>";
-
-
         $tipo_bilhete = valorCampo('ticket');
         $qtde = valorCampo('qtde_bilhetes');
 
-        $data_partida = valorCampo('data-de-partida');
+        $data_partida = strtotime(valorCampo('data-de-partida'),2);
         $tipo_vagao = valorCampo('vagao');
 
-        $data = date("d/m/Y H:i:s");
-        $preco =  precoFinal($tipo_bilhete,$qtde,$valor_opcional,$tipo_vagao);
+        $data = "Data da compra: ". date("d/m/Y H:i:s");
+        $preco =  "R$ ".number_format(precoFinal($tipo_bilhete,$qtde,$valor_opcional,$tipo_vagao),2);
 
-        $data_msg = "Data da compra: $data";
-        $preco = number_format($preco,2);
-        $preco_msg = "R$ $preco";
-
-        $dados = array($nome,$tipo_bilhete,$qtde,$preco_msg,$data_partida,$data_msg);
+        $dados = array($nome,$tipo_bilhete,$qtde,$preco,$data_partida,$data);
 
         emitir_passagem($dados);
-
-        foreach ($dados as $dado) {
-            echo "<h2>$dado</h2>";
-        }
     ?>
+    <div class="result">
+        <?php
+            $time_str = strtotime($data_partida);
+            echo date("d/m/Y",$time_str);
+            foreach ($dados as $dado) {
+                echo "<h2>$dado</h2>";
+            }
+        ?>
+    </div>
     
 </body>
 </html>
