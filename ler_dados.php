@@ -81,6 +81,7 @@
 
         $nome =  valorCampo('first-name');
         $sobrenome = valorCampo('last-name');
+        $nome_completo = "$nome $sobrenome";
 
         $opcionais = valorCampo('optional');
         $valor_opcional = precoOpcional($opcionais);
@@ -88,13 +89,13 @@
         $tipo_bilhete = valorCampo('ticket');
         $qtde = valorCampo('qtde_bilhetes');
 
-        $data_partida = strtotime(valorCampo('data-de-partida'),2);
+        $data_partida = date("d/m/Y",strtotime(valorCampo('data-de-partida'),2));
         $tipo_vagao = valorCampo('vagao');
 
-        $data = "Data da compra: ". date("d/m/Y H:i:s");
+        $data = "Data da compra: ". date("d/m/Y");
         $preco =  "R$ ".number_format(precoFinal($tipo_bilhete,$qtde,$valor_opcional,$tipo_vagao),2);
 
-        $dados = array($nome,$tipo_bilhete,$qtde,$preco,$data_partida,$data);
+        $dados = array($nome_completo,$tipo_bilhete,$tipo_vagao,$qtde,$preco,$data_partida,$data);
 
         emitir_passagem($dados);
     ?>
