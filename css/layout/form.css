@@ -50,14 +50,6 @@ input[type="checkbox"]{
     text-align: center;
 }
 
-.btn{
-    margin-top: 2%;
-    border-radius: 5px;
-    border: none;
-    height: 40px;
-    width: 15%;
-    cursor: pointer;
-}
 
 
 .btn-price{
@@ -68,4 +60,11 @@ input[type="checkbox"]{
 .btn-submit{
     background-color: rgb(77, 204, 77);
     color: #FFF;
+}
+
+#txtArea{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
 }

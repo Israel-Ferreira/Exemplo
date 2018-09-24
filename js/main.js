@@ -19,18 +19,6 @@ const formError = () => {
     errorMsg.textContent = "Campos Vazios!!";
 }
 
-const priceTrip =  opt => {
-    if(opt === "Expresso da Meia Noite"){
-        return 500;
-    }else if(opt === "Passeio Panorâmico"){
-        return 350;
-    }else if(opt === "Passeio Normal"){
-        return 250;
-    }else{
-        return 0;
-    }
-}
-
 
 form.addEventListener('submit', event => {
     let ids = ["first-name","last-name","ticket","date-picker","amount"];
@@ -42,7 +30,6 @@ form.addEventListener('submit', event => {
         formError();
     }
 });
-
 
 
 form.addEventListener('change',event => {

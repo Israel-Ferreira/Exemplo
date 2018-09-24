@@ -15,7 +15,7 @@
 }
 
 .servico{
-    border: 1px solid black;
+    border: 1px solid #ddd;
     border-radius: 5px;
     width: 25%;
     height: 390px;
@@ -31,7 +31,7 @@
 .servico-image{
     width: 88.5%;
     height: 200px;
-    margin: 1% auto;
+    margin: 2% auto;
     display: block;
 }
 
